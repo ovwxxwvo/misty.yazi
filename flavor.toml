@@ -1,0 +1,350 @@
+# YAZI config,
+# Maintainer:  Jessee Chan <CYPHER0@foxmail.com>
+# Last Change: 2024.10.24
+
+
+[flavor]
+  use = ""
+
+[manager]
+  cwd = { fg = "#b0b050", bold = true }
+
+  # Hovered
+  preview_hovered = { bg = "#303030" }
+  hovered         = { reversed = true, bold = true }
+
+  # Marker
+  marker_marked   = { fg = "#ffd0a0", bg = "#ffd0a0" }
+  marker_selected = { fg = "#ffffa0", bg = "#ffffa0" }
+  marker_copied   = { fg = "#d0a0ff", bg = "#d0a0ff" }
+  marker_cut      = { fg = "#ffa0d0", bg = "#ffa0d0" }
+
+  # Count
+  count_marked    = { fg = "#ffd0a0", reversed = true, bold = true }
+  count_selected  = { fg = "#ffffa0", reversed = true, bold = true }
+  count_copied    = { fg = "#d0a0ff", reversed = true, bold = true }
+  count_cut       = { fg = "#ffa0d0", reversed = true, bold = true }
+
+  # Tab
+  tab_active      = { fg = "#a0d0ff", reversed = true, bold = true }
+  tab_inactive    = {}
+  tab_width       = 1
+
+  # Find
+  find_keyword    = { fg = "#ffffa0",               bold = true, italic = true, underline = true }
+  find_position   = { fg = "#ffa0ff", bg = "reset", bold = true, italic = true }
+
+  # Border
+  border_style    = { fg = "#101010" }
+  border_symbol   = "!"
+
+  # Highlighting
+  syntect_theme   = ""
+
+[status]
+  # separator_open  = ""
+  # separator_close = ""
+  separator_open  = ""
+  separator_close = ""
+  separator_style = { fg = "#303030", bg = "#303030" }
+
+  # Mode
+  mode_normal     = { fg = "#303030", bg = "#a0d0ff", bold = true }
+  mode_select     = { fg = "#101010", bg = "#ffd0a0", bold = true }
+  mode_unset      = { fg = "#101010", bg = "#a0ffff", bold = true }
+
+  # Permissions
+  permissions_s   = { fg = "#b0b0b0" }
+  permissions_t   = { fg = "#a0d0ff" }
+  permissions_r   = { fg = "#5080b0" }
+  permissions_w   = { fg = "#5080b0" }
+  permissions_x   = { fg = "#5080b0" }
+
+  # Progress
+  progress_label  = { bold = true }
+  progress_normal = { fg = "#a0ffa0", bg = "#001020" }
+  progress_error  = { fg = "#ffa0a0", bg = "#001020" }
+
+[select]
+  border   = { fg = "#e0f0ff" }
+  active   = { fg = "#ffe0ff", bold = true }
+  inactive = {}
+
+[input]
+  border   = { fg = "#a0d0ff" }
+  selected = { reversed = true }
+  title    = {}
+  value    = {}
+
+[tamts]
+  border  = { fg = "#a0a0ff" }
+  hovered = { fg = "#ffa0ff", underline = true }
+  title   = {}
+
+[which]
+  cols            = 2
+  mamt            = { bg = "#101010" }
+  rest            = { fg = "#b0b0b0" }
+  cand            = { fg = "#80b050" }
+  desc            = { fg = "#5080b0" }
+  separator_style = { fg = "#b0b050", bold = true }
+  separator       = " > "
+
+[help]
+  on      = { fg = "#a0ffff" }
+  run     = { fg = "#d0ffa0" }
+  desc    = {}
+  footer  = { fg = "#a0d0ff", bg = "#003060" }
+  hovered = { reversed = true, bold = true }
+
+[notify]
+  title_info  = { fg = "#a0ffff" }
+  title_warn  = { fg = "#ffffa0" }
+  title_error = { fg = "#ffa0ff" }
+  # Icons
+  icon_info  = ""
+  icon_warn  = ""
+  icon_error = ""
+
+[completion]
+  border   = { fg = "#e0f0ff" }
+  active   = { reversed = true }
+  inactive = {}
+  # Icons
+  icon_folder  = ""
+  icon_file    = ""
+  icon_command = ""
+
+[filetype]
+  rules = [
+
+  # text
+    { name = "*.txt",   fg = "#b0b0b0" },
+    { name = "*.md",    fg = "#b0b0b0" },
+    { name = "*.pdf",   fg = "#b0b0b0" },
+    { name = "*.doc",   fg = "#b0b0b0" },
+    { name = "*.xls",   fg = "#b0b0b0" },
+    { name = "*.ppt",   fg = "#b0b0b0" },
+    { name = "*.docx",  fg = "#b0b0b0" },
+    { name = "*.xlsx",  fg = "#b0b0b0" },
+    { name = "*.pptx",  fg = "#b0b0b0" },
+
+  # image
+    { name = "*.jpg",   fg = "#80b050" },
+    { name = "*.png",   fg = "#80b050" },
+    { name = "*.gif",   fg = "#80b050" },
+    { name = "*.bmp",   fg = "#80b050" },
+    { name = "*.tif",   fg = "#80b050" },
+    { name = "*.tiff",  fg = "#80b050" },
+
+  # audio
+    { name = "*.mp3",   fg = "#b05080" },
+    { name = "*.m4a",   fg = "#b05080" },
+    { name = "*.aac",   fg = "#b05080" },
+    { name = "*.ogg",   fg = "#b05080" },
+    { name = "*.wav",   fg = "#b05080" },
+    { name = "*.flac",  fg = "#b05080" },
+
+  # video
+    { name = "*.mp4",   fg = "#8050b0" },
+    { name = "*.m4v",   fg = "#8050b0" },
+    { name = "*.mkv",   fg = "#8050b0" },
+    { name = "*.flv",   fg = "#8050b0" },
+    { name = "*.avi",   fg = "#8050b0" },
+    { name = "*.webm",  fg = "#8050b0" },
+
+  # archive
+    { name = "*.7z",    fg = "#b05050" },
+    { name = "*.zip",   fg = "#b05050" },
+    { name = "*.rar",   fg = "#b05050" },
+    { name = "*.tar",   fg = "#b05050" },
+    { name = "*.tgz",   fg = "#b05050" },
+    { name = "*.zst",   fg = "#b05050" },
+    { name = "*.bz2",   fg = "#b05050" },
+    { name = "*.bz3",   fg = "#b05050" },
+    { name = "*.bz",    fg = "#b05050" },
+    { name = "*.gz",    fg = "#b05050" },
+    { name = "*.xz",    fg = "#b05050" },
+
+  # script
+    { name = "*.sh",    fg = "#b0b0b0" },
+    { name = "*.bsh",   fg = "#b0b0b0" },
+    { name = "*.dsh",   fg = "#b0b0b0" },
+    { name = "*.py",    fg = "#b0b0b0" },
+    { name = "*.pyw",   fg = "#b0b0b0" },
+
+  	{ name = "conf",    fg = "#b0b0b0" },
+   	{ name = "cfg",     fg = "#b0b0b0" },
+  	{ name = "ini",     fg = "#b0b0b0" },
+  	{ name = "cmake",   fg = "#b0b0b0" },
+
+  	{ name = "tmux",    fg = "#b0b0b0" },
+  	{ name = "fish",    fg = "#b0b0b0" },
+  	{ name = "toml",    fg = "#b0b0b0" },
+  	{ name = "yaml",    fg = "#b0b0b0" },
+  	{ name = "tmx",     fg = "#b0b0b0" },
+  	{ name = "fsh",     fg = "#b0b0b0" },
+  	{ name = "tml",     fg = "#b0b0b0" },
+  	{ name = "yml",     fg = "#b0b0b0" },
+  	{ name = "vimrc",   fg = "#b0b0b0" },
+  	{ name = "vim",     fg = "#b0b0b0" },
+  	{ name = "lua",     fg = "#b0b0b0" },
+  	{ name = "luc",     fg = "#b0b0b0" },
+
+  # Special
+    { name = "*",  is = "orphan", bg = "#ffa0a0" },
+    { name = "*",  is = "dummy",  bg = "#ffa0a0" },
+    { name = "*",  is = "fifo",   fg = "#b08050" },
+    { name = "*",  is = "sock",   fg = "#b050b0" },
+
+  # dir
+    { name = "*/", is = "dummy",  bg = "#b05050" },
+    { name = "*/", is = "link",   fg = "#5050b0", bold = true },
+    { name = "*/",                fg = "#50b0b0", bold = true },
+
+  ]
+
+[icon]
+  globs = []
+
+  dirs  = [
+  	{ name = ".config",   text = "" },
+  	{ name = ".git",      text = "" },
+  	{ name = "Demttop",   text = "" },
+  	{ name = "Downloads", text = "" },
+  	# { name = "Public",    text = "" },
+  	# { name = "Library",   text = "" },
+  	# { name = "Documents", text = "" },
+  	# { name = "Pictures",  text = "" },
+  	# { name = "Music",     text = "" },
+  	# { name = "Movies",    text = "" },
+    ]
+
+  exts = [
+  	{ name = "txt",    text = "󰈙", fg_dark = "#f0f0f0", fg_light = "#f0f0f0" },
+  	{ name = "md",     text = "", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "pdf",    text = "", fg_dark = "#ffa0a0", fg_light = "#ffa0a0" },
+  	{ name = "doc",    text = "󰈬", fg_dark = "#a0d0ff", fg_light = "#a0d0ff" },
+  	{ name = "docx",   text = "󰈬", fg_dark = "#a0d0ff", fg_light = "#a0d0ff" },
+  	{ name = "xls",    text = "󰈛", fg_dark = "#a0ffd0", fg_light = "#a0ffd0" },
+  	{ name = "xlsx",   text = "󰈛", fg_dark = "#a0ffd0", fg_light = "#a0ffd0" },
+  	{ name = "ppt",    text = "󰈧", fg_dark = "#ffd0a0", fg_light = "#ffd0a0" },
+  	{ name = "pptx",   text = "󰈧", fg_dark = "#ffd0a0", fg_light = "#ffd0a0" },
+
+  	{ name = "7z",     text = "", fg_dark = "#ffa0a0", fg_light = "#ffa0a0" },
+  	{ name = "zip",    text = "", fg_dark = "#ffa0a0", fg_light = "#ffa0a0" },
+  	{ name = "rar",    text = "", fg_dark = "#ffa0a0", fg_light = "#ffa0a0" },
+  	{ name = "tar",    text = "", fg_dark = "#ffa0a0", fg_light = "#ffa0a0" },
+  	{ name = "tgz",    text = "", fg_dark = "#ffa0a0", fg_light = "#ffa0a0" },
+  	{ name = "zst",    text = "", fg_dark = "#ffa0a0", fg_light = "#ffa0a0" },
+  	{ name = "bz2",    text = "", fg_dark = "#ffa0a0", fg_light = "#ffa0a0" },
+  	{ name = "bz3",    text = "", fg_dark = "#ffa0a0", fg_light = "#ffa0a0" },
+  	{ name = "bz",     text = "", fg_dark = "#ffa0a0", fg_light = "#ffa0a0" },
+  	{ name = "gz",     text = "", fg_dark = "#ffa0a0", fg_light = "#ffa0a0" },
+  	{ name = "xz",     text = "", fg_dark = "#ffa0a0", fg_light = "#ffa0a0" },
+
+  # # # #
+  	{ name = "jpg",    text = "", fg_dark = "#d0ffa0", fg_light = "#d0ffa0" },
+  	{ name = "png",    text = "", fg_dark = "#d0ffa0", fg_light = "#d0ffa0" },
+  	{ name = "gif",    text = "", fg_dark = "#d0ffa0", fg_light = "#d0ffa0" },
+  	{ name = "bmp",    text = "", fg_dark = "#d0ffa0", fg_light = "#d0ffa0" },
+  	{ name = "tif",    text = "", fg_dark = "#d0ffa0", fg_light = "#d0ffa0" },
+  	{ name = "tiff",   text = "", fg_dark = "#d0ffa0", fg_light = "#d0ffa0" },
+
+  	{ name = "mp3",    text = "", fg_dark = "#ffa0d0", fg_light = "#ffa0d0" },
+  	{ name = "m4a",    text = "", fg_dark = "#ffa0d0", fg_light = "#ffa0d0" },
+  	{ name = "aac",    text = "", fg_dark = "#ffa0d0", fg_light = "#ffa0d0" },
+  	{ name = "ogg",    text = "", fg_dark = "#ffa0d0", fg_light = "#ffa0d0" },
+  	{ name = "wav",    text = "", fg_dark = "#ffa0d0", fg_light = "#ffa0d0" },
+  	{ name = "flac",   text = "", fg_dark = "#ffa0d0", fg_light = "#ffa0d0" },
+
+  	{ name = "mp4",    text = "", fg_dark = "#d0a0ff", fg_light = "#d0a0ff" },
+  	{ name = "m4v",    text = "", fg_dark = "#d0a0ff", fg_light = "#d0a0ff" },
+  	{ name = "mkv",    text = "", fg_dark = "#d0a0ff", fg_light = "#d0a0ff" },
+  	{ name = "flv",    text = "", fg_dark = "#d0a0ff", fg_light = "#d0a0ff" },
+  	{ name = "avi",    text = "", fg_dark = "#d0a0ff", fg_light = "#d0a0ff" },
+  	{ name = "webm",   text = "", fg_dark = "#d0a0ff", fg_light = "#d0a0ff" },
+
+  # # # #
+  	{ name = "sh",     text = "", fg_dark = "#ffffa0", fg_light = "#ffffa0" },
+  	{ name = "bsh",    text = "", fg_dark = "#ffffa0", fg_light = "#ffffa0" },
+  	{ name = "dsh",    text = "", fg_dark = "#ffffa0", fg_light = "#ffffa0" },
+  	{ name = "ash",    text = "", fg_dark = "#ffffa0", fg_light = "#ffffa0" },
+  	{ name = "py",     text = "", fg_dark = "#ffffa0", fg_light = "#ffffa0" },
+  	{ name = "pyw",    text = "", fg_dark = "#ffffa0", fg_light = "#ffffa0" },
+
+  	{ name = "conf",   text = "", fg_dark = "#ffd0a0", fg_light = "#ffd0a0" },
+   	{ name = "cfg",    text = "", fg_dark = "#ffd0a0", fg_light = "#ffd0a0" },
+  	{ name = "ini",    text = "", fg_dark = "#ffd0a0", fg_light = "#ffd0a0" },
+  	{ name = "cmake",  text = "", fg_dark = "#ffd0a0", fg_light = "#ffd0a0" },
+
+  	{ name = "tmux",   text = "", fg_dark = "#ffd0a0", fg_light = "#ffd0a0" },
+  	{ name = "fish",   text = "", fg_dark = "#ffd0a0", fg_light = "#ffd0a0" },
+  	{ name = "toml",   text = "", fg_dark = "#ffd0a0", fg_light = "#ffd0a0" },
+  	{ name = "yaml",   text = "", fg_dark = "#ffd0a0", fg_light = "#ffd0a0" },
+  	{ name = "tmx",    text = "", fg_dark = "#ffd0a0", fg_light = "#ffd0a0" },
+  	{ name = "fsh",    text = "", fg_dark = "#ffd0a0", fg_light = "#ffd0a0" },
+  	{ name = "tml",    text = "", fg_dark = "#ffd0a0", fg_light = "#ffd0a0" },
+  	{ name = "yml",    text = "", fg_dark = "#ffd0a0", fg_light = "#ffd0a0" },
+  	{ name = "vimrc",  text = "", fg_dark = "#ffd0a0", fg_light = "#ffd0a0" },
+  	{ name = "vim",    text = "", fg_dark = "#ffd0a0", fg_light = "#ffd0a0" },
+  	{ name = "lua",    text = "", fg_dark = "#ffd0a0", fg_light = "#ffd0a0" },
+  	{ name = "luc",    text = "", fg_dark = "#ffd0a0", fg_light = "#ffd0a0" },
+
+  # # # #
+  	{ name = "bin",    text = "", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "exe",    text = "", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "apk",    text = "", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "ko",     text = "", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "so",     text = "", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "lib",    text = "", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "sql",    text = "", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "obj",    text = "󰆧", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+
+  	{ name = "rs",     text = "󱘗", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "rlib",   text = "󱘗", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "c",      text = "", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "cpp",    text = "", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "xml",    text = "󰗀", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "qml",    text = "", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+
+  # # # #
+  	{ name = "md5",    text = "󰕥", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "sha1",   text = "󰕥", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "sha224", text = "󰕥", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "sha256", text = "󰕥", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "sha384", text = "󰕥", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "sha512", text = "󰕥", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+
+  	{ name = "magnet", text = "", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "dump",   text = "", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "img",    text = "", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "iso",    text = "", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "ttf",    text = "", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "m3u",    text = "󰲹", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+  	{ name = "m3u8",   text = "󰲹", fg_dark = "#d0d0d0", fg_light = "#d0d0d0" },
+
+    ]
+
+  files = [
+  	{ name = ".env", text = "", fg_dark = "reset", fg_light = "reset" },
+    ]
+
+  conds = [
+    # dir
+  	{ if = "dir",    text = "󰉋" },
+  	# Special files
+  	{ if = "link"  , text = "" },
+  	{ if = "fifo"  , text = "" },
+  	{ if = "sock"  , text = "" },
+  	{ if = "orphan", text = "" },
+  	{ if = "dummy",  text = "" },
+  	{ if = "block" , text = "" },
+  	{ if = "char"  , text = "" },
+  	{ if = "sticky", text = "" },
+  	{ if = "exec",   text = "" },
+  	# Fallback
+  	{ if = "!dir",   text = "󰈔" },
+    ]
+
+
