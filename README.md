@@ -15,6 +15,7 @@ The following config file path base on `Arch Linux`.
 以下的配置文件的路经基于`Arch Linux`。  
 
 #### Install with package manager 包管理器安装  
+
 ```sh  
 ya pack -a yazi-rs/flavors:ovwxxwvo/misty  
 ```  
@@ -25,6 +26,7 @@ Add this line to your yazi config file `~/.config/yazi/theme.toml` :
 ```  
 
 #### Install manually 手动安装  
+
 Clone the repo to your yazi config dir :  
 ```sh  
 git clone https://github.com/ovwxxwvo/misty.yazi.git ~/.config/yazi/flavors/  
