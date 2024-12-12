@@ -29,7 +29,8 @@ Add this line to your yazi config file `~/.config/yazi/theme.toml` :
 
 Clone the repo to your yazi config dir :  
 ```sh  
-git clone https://github.com/ovwxxwvo/misty.yazi.git ~/.config/yazi/flavors/  
+cd ~/.config/yazi/flavors/  
+git clone https://github.com/ovwxxwvo/misty.yazi.git  
 ```  
 Add this line to your yazi config file `~/.config/yazi/theme.toml` :  
 ```toml  
