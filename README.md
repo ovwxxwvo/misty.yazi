@@ -22,7 +22,7 @@ ya pack -a yazi-rs/flavors:ovwxxwvo/misty
 Add this line to your yazi config file `~/.config/yazi/theme.toml` :  
 ```toml  
 [flavor]  
-  use = "misty"  
+  dark = "misty"  
 ```  
 
 #### Install manually 手动安装  
