@@ -10,8 +10,8 @@
   cwd = { fg = "#a0a050", bold = true }
 
   # Hovered
-  preview_hovered = { bg = "#202020" }
   hovered         = { reversed = true, bold = true }
+  preview_hovered = { bg = "#202020", bold = true, underline = false }
 
   # Marker
   marker_marked   = { fg = "#f0e0c0", bg = "#f0e0c0" }
@@ -125,88 +125,88 @@
   rules = [
 
   # text
-    { name = "*.txt",   fg = "#d0d0d0" },
-    { name = "*.md",    fg = "#d0d0d0" },
-    { name = "*.pdf",   fg = "#d0d0d0" },
-    { name = "*.doc",   fg = "#d0d0d0" },
-    { name = "*.xls",   fg = "#d0d0d0" },
-    { name = "*.ppt",   fg = "#d0d0d0" },
-    { name = "*.docx",  fg = "#d0d0d0" },
-    { name = "*.xlsx",  fg = "#d0d0d0" },
-    { name = "*.pptx",  fg = "#d0d0d0" },
+    { url = "*.txt",   fg = "#d0d0d0" },
+    { url = "*.md",    fg = "#d0d0d0" },
+    { url = "*.pdf",   fg = "#d0d0d0" },
+    { url = "*.doc",   fg = "#d0d0d0" },
+    { url = "*.xls",   fg = "#d0d0d0" },
+    { url = "*.ppt",   fg = "#d0d0d0" },
+    { url = "*.docx",  fg = "#d0d0d0" },
+    { url = "*.xlsx",  fg = "#d0d0d0" },
+    { url = "*.pptx",  fg = "#d0d0d0" },
 
   # image
-    { name = "*.jpg",   fg = "#80a050" },
-    { name = "*.png",   fg = "#80a050" },
-    { name = "*.gif",   fg = "#80a050" },
-    { name = "*.bmp",   fg = "#80a050" },
-    { name = "*.tif",   fg = "#80a050" },
-    { name = "*.tiff",  fg = "#80a050" },
+    { url = "*.jpg",   fg = "#80a050" },
+    { url = "*.png",   fg = "#80a050" },
+    { url = "*.gif",   fg = "#80a050" },
+    { url = "*.bmp",   fg = "#80a050" },
+    { url = "*.tif",   fg = "#80a050" },
+    { url = "*.tiff",  fg = "#80a050" },
 
   # audio
-    { name = "*.mp3",   fg = "#a05080" },
-    { name = "*.m4a",   fg = "#a05080" },
-    { name = "*.aac",   fg = "#a05080" },
-    { name = "*.ogg",   fg = "#a05080" },
-    { name = "*.wav",   fg = "#a05080" },
-    { name = "*.flac",  fg = "#a05080" },
+    { url = "*.mp3",   fg = "#a05080" },
+    { url = "*.m4a",   fg = "#a05080" },
+    { url = "*.aac",   fg = "#a05080" },
+    { url = "*.ogg",   fg = "#a05080" },
+    { url = "*.wav",   fg = "#a05080" },
+    { url = "*.flac",  fg = "#a05080" },
 
   # video
-    { name = "*.mp4",   fg = "#8050a0" },
-    { name = "*.m4v",   fg = "#8050a0" },
-    { name = "*.mkv",   fg = "#8050a0" },
-    { name = "*.flv",   fg = "#8050a0" },
-    { name = "*.avi",   fg = "#8050a0" },
-    { name = "*.webm",  fg = "#8050a0" },
+    { url = "*.mp4",   fg = "#8050a0" },
+    { url = "*.m4v",   fg = "#8050a0" },
+    { url = "*.mkv",   fg = "#8050a0" },
+    { url = "*.flv",   fg = "#8050a0" },
+    { url = "*.avi",   fg = "#8050a0" },
+    { url = "*.webm",  fg = "#8050a0" },
 
   # archive
-    { name = "*.7z",    fg = "#a05050" },
-    { name = "*.zip",   fg = "#a05050" },
-    { name = "*.rar",   fg = "#a05050" },
-    { name = "*.tar",   fg = "#a05050" },
-    { name = "*.tgz",   fg = "#a05050" },
-    { name = "*.zst",   fg = "#a05050" },
-    { name = "*.bz2",   fg = "#a05050" },
-    { name = "*.bz3",   fg = "#a05050" },
-    { name = "*.bz",    fg = "#a05050" },
-    { name = "*.gz",    fg = "#a05050" },
-    { name = "*.xz",    fg = "#a05050" },
+    { url = "*.7z",    fg = "#a05050" },
+    { url = "*.zip",   fg = "#a05050" },
+    { url = "*.rar",   fg = "#a05050" },
+    { url = "*.tar",   fg = "#a05050" },
+    { url = "*.tgz",   fg = "#a05050" },
+    { url = "*.zst",   fg = "#a05050" },
+    { url = "*.bz2",   fg = "#a05050" },
+    { url = "*.bz3",   fg = "#a05050" },
+    { url = "*.bz",    fg = "#a05050" },
+    { url = "*.gz",    fg = "#a05050" },
+    { url = "*.xz",    fg = "#a05050" },
 
   # script
-    { name = "*.sh",    fg = "#d0d0d0" },
-    { name = "*.bsh",   fg = "#d0d0d0" },
-    { name = "*.dsh",   fg = "#d0d0d0" },
-    { name = "*.py",    fg = "#d0d0d0" },
-    { name = "*.pyw",   fg = "#d0d0d0" },
+    { url = "*.sh",    fg = "#d0d0d0" },
+    { url = "*.bsh",   fg = "#d0d0d0" },
+    { url = "*.dsh",   fg = "#d0d0d0" },
+    { url = "*.py",    fg = "#d0d0d0" },
+    { url = "*.pyw",   fg = "#d0d0d0" },
 
-  	{ name = "conf",    fg = "#d0d0d0" },
-   	{ name = "cfg",     fg = "#d0d0d0" },
-  	{ name = "ini",     fg = "#d0d0d0" },
-  	{ name = "cmake",   fg = "#d0d0d0" },
+  	{ url = "conf",    fg = "#d0d0d0" },
+   	{ url = "cfg",     fg = "#d0d0d0" },
+  	{ url = "ini",     fg = "#d0d0d0" },
+  	{ url = "cmake",   fg = "#d0d0d0" },
 
-  	{ name = "tmux",    fg = "#d0d0d0" },
-  	{ name = "fish",    fg = "#d0d0d0" },
-  	{ name = "toml",    fg = "#d0d0d0" },
-  	{ name = "yaml",    fg = "#d0d0d0" },
-  	{ name = "tmx",     fg = "#d0d0d0" },
-  	{ name = "fsh",     fg = "#d0d0d0" },
-  	{ name = "tml",     fg = "#d0d0d0" },
-  	{ name = "yml",     fg = "#d0d0d0" },
-  	{ name = "vimrc",   fg = "#d0d0d0" },
-  	{ name = "vim",     fg = "#d0d0d0" },
-  	{ name = "lua",     fg = "#d0d0d0" },
-  	{ name = "luc",     fg = "#d0d0d0" },
+  	{ url = "tmux",    fg = "#d0d0d0" },
+  	{ url = "fish",    fg = "#d0d0d0" },
+  	{ url = "toml",    fg = "#d0d0d0" },
+  	{ url = "yaml",    fg = "#d0d0d0" },
+  	{ url = "tmx",     fg = "#d0d0d0" },
+  	{ url = "fsh",     fg = "#d0d0d0" },
+  	{ url = "tml",     fg = "#d0d0d0" },
+  	{ url = "yml",     fg = "#d0d0d0" },
+  	{ url = "vimrc",   fg = "#d0d0d0" },
+  	{ url = "vim",     fg = "#d0d0d0" },
+  	{ url = "lua",     fg = "#d0d0d0" },
+  	{ url = "luc",     fg = "#d0d0d0" },
 
   # Special
-    { name = "*",  is = "orphan", bg = "#f0c0c0" },
-    { name = "*",  is = "dummy",  bg = "#f0c0c0" },
-    { name = "*",  is = "fifo",   fg = "#a08050" },
-    { name = "*",  is = "sock",   fg = "#a050a0" },
+    { url = "*",  is = "orphan", bg = "#f0c0c0" },
+    { url = "*",  is = "dummy",  bg = "#f0c0c0" },
+    { url = "*",  is = "fifo",   fg = "#a08050" },
+    { url = "*",  is = "sock",   fg = "#a050a0" },
 
   # dir
-    { name = "*/", is = "dummy",  bg = "#a05050" },
-    { name = "*/", is = "link",   fg = "#5050a0", bold = true },
-    { name = "*/",                fg = "#50a0a0", bold = true },
+    { url = "*/", is = "dummy",  bg = "#a05050" },
+    { url = "*/", is = "link",   fg = "#5050a0", bold = true },
+    { url = "*/",                fg = "#50a0a0", bold = true },
 
   ]
 
