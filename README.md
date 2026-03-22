@@ -17,7 +17,7 @@ The following config file path base on `Arch Linux`.
 #### Install with package manager 包管理器安装  
 
 ```sh  
-ya pkg add ovwxxwvo/misty.yazi  
+ya pkg add ovwxxwvo/misty  
 ```  
 Add this line to your yazi config file `~/.config/yazi/theme.toml` :  
 ```toml  
