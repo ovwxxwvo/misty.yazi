@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"> <dict>
+
+
+<key>name</key> <string>misty</string>
+  <key>semanticClass</key>
+  <string>theme.dark.misty</string>
+  <key>author</key>
+  <string>Jessee Chan</string>
+  <key>colorSpaceName</key>
+  <string>sRGB</string>
+  <key>settings</key>
+  <array>
+
+<dict> <key>settings</key>  <dict>
+  <key>foreground</key>
+  <string>#101010</string>
+  <!-- <key>background</key> -->
+  <!-- <string>#222222</string> -->
+  <!-- <key>caret</key> -->
+  <!-- <string>#FFFFFF</string> -->
+  </dict> </dict>
+
+<dict> <key>name</key> <string>comment</string>
+  <key>scope</key>     <string>comment</string>
+  <key>settings</key>  <dict>
+  <key>foreground</key>
+  <string>#303030</string>
+  </dict> </dict>
+
+<dict> <key>name</key> <string>string</string>
+  <key>scope</key>     <string>string</string>
+  <key>settings</key>  <dict>
+  <key>foreground</key>
+  <string>#50a0a0</string>
+  </dict> </dict>
+
+<dict> <key>name</key> <string>constant</string>
+  <key>scope</key>     <string>constant</string>
+  <key>settings</key>  <dict>
+  <key>foreground</key>
+  <string>#c0f0f0</string>
+  </dict> </dict>
+
+<dict> <key>name</key> <string>variable</string>
+  <key>scope</key>     <string>variable</string>
+  <key>settings</key>  <dict>
+  <key>foreground</key>
+  <string>#c0f0e0</string>
+  </dict> </dict>
+
+<dict> <key>name</key> <string>support</string>
+  <key>scope</key>     <string>support</string>
+  <key>settings</key>  <dict>
+  <key>foreground</key>
+  <string>#e0f0c0</string>
+  </dict> </dict>
+
+<dict> <key>name</key> <string>storage</string>
+  <key>scope</key>     <string>storage</string>
+  <key>settings</key>  <dict>
+  <key>foreground</key>
+  <string>#a0d0f0</string>
+  </dict> </dict>
+
+<dict> <key>name</key> <string>entity</string>
+  <key>scope</key>     <string>entity</string>
+  <key>settings</key>  <dict>
+  <key>foreground</key>
+  <string>#c0e0f0</string>
+  </dict> </dict>
+
+<dict> <key>name</key> <string>keyword</string>
+  <key>scope</key>     <string>keyword</string>
+  <key>settings</key>  <dict>
+  <key>foreground</key>
+  <string>#50a080</string>
+  </dict> </dict>
+
+<dict> <key>name</key> <string>meta</string>
+  <key>scope</key>     <string>meta</string>
+  <key>settings</key>  <dict>
+  <key>foreground</key>
+  <string>#80a050</string>
+  </dict> </dict>
+
+<dict> <key>name</key> <string>source</string>
+  <key>scope</key>     <string>source</string>
+  <key>settings</key>  <dict>
+  <key>foreground</key>
+  <string>#f0e0c0</string>
+  </dict> </dict>
+
+<dict> <key>name</key> <string>markup</string>
+  <key>scope</key>     <string>markup</string>
+  <key>settings</key>  <dict>
+  <key>foreground</key>
+  <string>#f0e0c0</string>
+  </dict> </dict>
+
+<dict> <key>name</key> <string>punctuation</string>
+  <key>scope</key>     <string>punctuation</string>
+  <key>settings</key>  <dict>
+  <key>foreground</key>
+  <string>#f0f0c0</string>
+  </dict> </dict>
+
+<dict> <key>name</key> <string>invalid</string>
+  <key>scope</key>     <string>invalid</string>
+  <key>settings</key>  <dict>
+  <key>foreground</key>
+  <string>#a05050</string>
+  </dict> </dict>
+
+<dict> <key>name</key> <string>text</string>
+  <key>scope</key>     <string>text</string>
+  <key>settings</key>  <dict>
+  <key>foreground</key>
+  <string>#d0d0d0</string>
+  </dict> </dict>
+
+
+</array>
+</dict>
+</plist>
+
+
